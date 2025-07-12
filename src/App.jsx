@@ -5,15 +5,29 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Grid from './components/Grid'
 import ToDoBody from './components/ToDoBody'
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-      <Grid/>
-      <Navbar/>
-      <ToDoBody/>
+      <ToastContainer
+        position="top-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss={false}
+        draggable
+        pauseOnHover={false}
+        theme="light"
+      />
+      <Grid />
+      <Navbar />
+      <ToDoBody />
     </div>
   )
 }
