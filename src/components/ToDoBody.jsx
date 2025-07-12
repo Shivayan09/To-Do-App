@@ -71,11 +71,11 @@ const ToDoBody = () => {
 
     return (
         <div className='relative'>
-            <div className='flex h-[80vh] w-[70vw] mx-auto mt-5 flex-col md:flex-row'>
-                <div className="box rounded-l-xl w-[100%] md:w-[50%] bg-cyan-500">
+            <div className='flex h-[80vh] w-[90vw] md:w-[70vw] mx-auto mt-5 flex-col md:flex-row gap-5 md:gap-0'>
+                <div className="box rounded-l-xl w-[100%] h-[50%] md:h-[100%] md:w-[50%] bg-cyan-500">
                     <div className="header text-[1.4rem] text-center mt-5 uppercase text-white font-bold">Your go to To-do list</div>
                     <div className="img">
-                        <img src={todo_icon} alt="todo illustration" />
+                        <img src={todo_icon} alt="todo illustration" className='h-30 mx-auto md:h-[65vh]'/>
                     </div>
                 </div>
                 <div className="box border-1 border-black/20 w-[100%] md:w-[50%] rounded-r-xl shadow-md p-5">
