@@ -5,7 +5,7 @@ import delete_icon from '../assets/delete-icon.png'
 import noTask_icon from '../assets/noTask-icon.png'
 import { v4 as uuidv4 } from 'uuid';
 import { toast } from 'react-toastify'
-import DelConfirmation from './delConfirmation'
+import DelCon from './DelCon'
 
 const ToDoBody = () => {
 
@@ -105,7 +105,7 @@ const ToDoBody = () => {
                         ) : (
                             todos.map((item) => (
                                 <div key={item.id} className="tasks flex items-center justify-between w-full overflow-y-auto mb-2">
-                                    {delId==item.id && <DelConfirmation
+                                    {delId==item.id && <DelCon
                                     todos={todos}
                                     setTodos={setTodos}
                                     setDelId={setDelId}

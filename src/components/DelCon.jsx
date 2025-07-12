@@ -1,7 +1,7 @@
 import React from 'react';
 import { toast } from 'react-toastify';
 
-const DelConfirmation = ({ item, todos = [], setTodos, setDelId }) => {
+const DelCon = ({ item, todos = [], setTodos, setDelId }) => {
     const handleConfirmDelete = () => {
         const updatedTodos = todos.filter(t => t.id !== item.id);
         setTodos(updatedTodos);
@@ -32,4 +32,4 @@ const DelConfirmation = ({ item, todos = [], setTodos, setDelId }) => {
     );
 };
 
-export default DelConfirmation;
+export default DelCon;
